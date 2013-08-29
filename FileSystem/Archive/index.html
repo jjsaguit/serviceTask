@@ -1,0 +1,20 @@
+<html>
+<body>
+<H2>Archive <IMG src="archive.gif"/></H2>
+A service for archiving files.<BR/>
+
+<H3>Parameters</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>Archive</B></td><td>String</td><td>The location where to create the zip archive (full file name, e.g. "C:/directory/myArchive.zip") on the file system</td></tr>
+<tr><td><B>Files</B></td><td>List&lt;File&gt;</td><td>The list of files that should be included in the archive</td></tr>
+</tbody></table>
+</body>
+
+<H3>Results</H3>
+
+<H3>Handler</H3>
+<TT>org.jbpm.process.workitem.archive.ArchiveWorkItemHandler</TT>
+<P/>
+Creates a ZIP archive on the given location, where each of the files in the list are added to the zip archive with
+the same name as the original file (not taking any directory structure into account).
+</html>

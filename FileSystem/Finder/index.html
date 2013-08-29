@@ -1,0 +1,24 @@
+<html>
+<body>
+<H2>Finder <IMG src="finder.gif"/></H2>
+A service for finding files on the file system, using <I>Apache Commons Finder</I>.<BR/>
+
+<H3>Parameters</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>Path</B></td><td>String</td><td>The location on the file system (folder) where to search</td></tr>
+<tr><td><B>Regex</B></td><td>String</td><td>The regular expression to search for</td></tr>
+</tbody></table>
+</body>
+
+<H3>Results</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>Files</B></td><td>List<File></td><td>The list of files matching the search criteria</td></tr>
+</tbody></table>
+
+<H3>Handler</H3>
+<TT>org.jbpm.process.workitem.finder.FinderWorkItemHandler</TT>
+<P/>
+Check out the Apache Commons Finder documentation on how to define expresssions.  For example, to search for text files
+in a specific directory, set the folder as the Path parameter and use the following regular expression:<BR/>
+<TT>.*txt</TT>
+</html>

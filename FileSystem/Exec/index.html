@@ -1,0 +1,20 @@
+<html>
+<body>
+<H2>Exec <IMG src="action.gif"/></H2>
+A service for executing system commands, using <I>Apache Commons Exec</I>.<BR/>
+
+<H3>Parameters</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>Command</B></td><td>String</td><td>The command to execute</td></tr>
+</tbody></table>
+</body>
+
+<H3>Results</H3>
+
+<H3>Handler</H3>
+<TT>org.jbpm.process.workitem.exec.ExecWorkItemHandler</TT>
+<P/>
+Check the Apache Commons Exec documentation for more documentation.  For example, to open a file on Windows using notepad,
+you can use the following command (where <TT>file</TT> is defined as a process variable):<BR/>
+<TT>notepad #{file}</TT>
+</html>

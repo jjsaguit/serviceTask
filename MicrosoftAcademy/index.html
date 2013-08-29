@@ -1,0 +1,34 @@
+<html>
+<body>
+<H2>Microsoft Academic Search<IMG src="microsoftacademy.png"/></H2>
+A service for searching academic publications on Microsoft Academic Search.<BR/>
+
+
+<H3>Parameters</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>title</B></td><td>String</td><td>The title of publication to search</td></tr>
+</tbody></table>
+
+<H3>Results</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>results</B></td><td>ObjectDataType("java.util.Map")</td><td>List of top 10 publications found</td></tr>
+</tbody></table>
+
+<H3>Handler</H3>
+<TT>org.msho.app.MicrosoftAcademyWorkItemHandler("AppID")</TT>
+<P/>
+<B>Requesting an AppID</B><BR>
+To identify each application using the MAS API, an AppID is required. To request an AppID  provide the following information in an email request to acadapi@microsoft.com:<BR>
+<ul>
+<li>Contact Person</li>
+<li>Contact Email</li>
+<li>Project URL</li>
+<li>Confirmation that you agree to the MAS Terms of Use and MS Terms of Use.
+	<ul>
+		<li>E.g. "We have read and agreed with the Microsoft/MAS Terms of Use"</li>
+		<li>Include a link to the MAS Terms of Use, MS Terms of Use. </li>
+	</ul>
+</li>
+</ul>
+<P/>Ref: <a href="http://www.google.com/url?sa=t&rct=j&q=microsoft%20academic%20search%20api%20user%20manual&source=web&cd=1&ved=0CE0QFjAA&url=http%3A%2F%2Facademic.research.microsoft.com%2Fabout%2FMicrosoft%2520Academic%2520Search%2520API%2520User%2520Manual.pdf&ei=diwGULC4Kqy42QWz8eHUBQ&usg=AFQjCNEYHwaRWhKJdHrR0NoSXJsmUAumGQ">Microsoft Academic Search API User Manual</a>
+</html>

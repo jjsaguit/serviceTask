@@ -1,0 +1,37 @@
+<html>
+<body>
+<H2>Twitter <IMG src="twitter.gif"/></H2>
+A service for twitter messages, using <TT>twitter4j</TT>.<BR/>
+
+
+<H3>Parameters</H3>
+<table border="1" cellpadding="3" ><tbody>
+<tr><td><B>Message</B></td><td>String</td><td>The message that needs to be set as the twitter status</td></tr>
+</tbody></table>
+</body>
+
+<H3>Results</H3>
+
+<H3>Handler</H3>
+<TT>org.jbpm.process.workitem.twitter.TwitterWorkItemHandler</TT>
+<P/>
+Can be configured using <TT>setCredentials(String consumerKey, String consumerSecret, String accessKey, String accessSecret)</TT>.
+<P/>
+These properties can also be set using a <TT>twitter.properties</TT> file in the classpath, containing values for the following properties:<BR/>
+<TT>twitter.consumerKey=<BR/>
+twitter.consumerSecret=<BR/>
+twitter.accessKey=<BR/>
+twitter.accessSecret=<BR/></TT>
+<P/>
+To generate valid keys and secrets that you can use to send status updates to your twitter account, you obviously first will need a twitter account.  Go to <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a> and log in.  In order to tweet, you will need to create an application. Click on <strong>Create a new application</strong> and fill in your application details (note that you'll need to create a unique name for your application) and submit. <BR/>
+<IMG src="createApplication.png" />
+<P/>OAuth is the mechanism used to authenticate you to twitter. You need valid keys to be able to publish tweets programmatically. The key has four parts<BR/>
+<ul>
+<li>Consumer Key</li>
+<li>Consumer Secret</li>
+<li>Access Token</li>
+<li>Access Token Secret</li>
+</ul>
+<P/>As soon as you create the keys you will see that the access is read-only. You need to go to the Settings tab and change it to <strong>Read and Write</strong>. After your changes are done it will take a minute for the changes to take effect. Once the access level is read and write, you should generate your access token. Once the keys are generated you will see a screen like the one below.  Use they keys and secret to configure the handler (either programatically or by using the twitter.properties file).<BR/>
+<IMG src="tokens.png" />
+</html>
